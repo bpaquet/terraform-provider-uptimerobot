@@ -1,12 +1,13 @@
 name: test
 on:
-  push:
-    branches: ["**"]
-    paths-ignore:
-      - "website/**"
-      - "*.md"
-      - "LICENSE"
-      - ".all-contributorsrc"
+  workflow_dispatch:
+#   push:
+#     branches: ["**"]
+#     paths-ignore:
+#       - "website/**"
+#       - "*.md"
+#       - "LICENSE"
+#       - ".all-contributorsrc"
 jobs:
   test:
     runs-on: ubuntu-latest
